@@ -3,10 +3,12 @@ import ReactDOM from 'react-dom/client'
 import Home from './components/Home/Home';
 import About from './components/About/About';
 import Contact from './components/Contact/Contact.jsx';
+import Github from './components/Github/github.jsx';
 
 import './index.css'
 import { Route, RouterProvider, createBrowserRouter, createRoutesFromElements } from 'react-router-dom'
 import Layout from './Layout.jsx'
+import User from './components/User/User.jsx';
 
 // const router = createBrowserRouter([
 //   {
@@ -34,6 +36,8 @@ const router = createBrowserRouter(
       <Route path='' element={<Home/>}/>
       <Route path='About' element={<About/>}/>
       <Route path='Contact' element={<Contact/>}/>
+      <Route path='user/:id' element={<User/>}/>
+      <Route path='github' element={<Github/>}/>
     </Route>
   )
 )
